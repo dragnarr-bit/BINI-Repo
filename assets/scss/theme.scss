@@ -78,8 +78,7 @@
 // -----------------------------------------------------------------------------
 
 @import "layouts/layouts"; // 1
-<<<<<<< HEAD
-=======
+
 
 .section-header {
     display: flex;
@@ -106,7 +105,7 @@
 }
 
 .product-card {
-    width: calc(25% - 15px); / 4 cards in a row /
+    width: calc(25% - 15px);
     background: #fff;
     padding: 15px;
     text-align: center;
@@ -133,7 +132,6 @@
     font-weight: 600;
 }
 
->>>>>>> 1dd3d3a0a13172869f841c37b30d4d334df56e4c
 .promo-cards-container {
     display: flex;
     justify-content: center;
@@ -165,13 +163,13 @@
     transform: scale(1.01);
 }
 .sale-price {
-    color: #e74c3c;  / Red for sale price /
+    color: #e74c3c;  
     font-weight: bold;
 }
 
 .original-price {
     display: inline !important; 
-    color: #888;  / Gray color for the original price /
+    color: #888;  
     text-decoration: line-through;
     margin-left: 8px;
 }

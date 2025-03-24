@@ -8,6 +8,6 @@
     "product": {}
   },
   "normalStoreUrl": "https://thread-and-cupid-h6.mybigcommerce.com/",
-  "port": "3030",
+  "port": "3000",
   "packageManager": "npm"
 }
