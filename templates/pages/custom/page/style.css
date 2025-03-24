@@ -1,0 +1,70 @@
+body {
+  background-color: white; /* Set background color to white */
+}
+
+.banner {
+  background-color: #ffe0e8; /* Banner color */
+  padding: 0px;
+  text-align: center;
+}
+
+.banner h2 {
+  margin: 0; /* Remove default margin */
+  padding: 10px;
+  font-family: "DM Sans", Arial, Helvetica, sans-serif;
+  color: #5d2b37;
+  font-size: 14px;
+  font-weight: 500px;
+  line-height: 21px;
+  text-align: center;
+  display: block;
+}
+
+.logo {
+  max-width: 100%; /* Ensure the logo is responsive */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Center the image */
+  margin: 0 auto; /* Center the image */
+  width: 300px; /* Width of the logo */
+  height: 100%;
+  padding: auto;
+}
+
+@media (max-width: 1920px) {
+  .back-button,
+  .cart-button {
+    display: none; /* Hide the banner on mobile screens */
+  }
+} 
+@media (max-width: 320px) {
+  .banner {
+    display: none; /* Hide the banner on mobile screens */
+  }
+  .logo {
+    width: 91px; /* Adjust the width of the logo on mobile screens */
+    height: 23px;
+
+    display: block; /* Center the image */
+    margin: 0 auto; /* Center the image */
+    /* margin-top: 10px; */
+  }
+
+  .back-button, .cart-button {
+    width: 24px;
+    height: 24px;
+    display: contents;
+  }
+  .header1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: #000;
+  }
+  .contanier-product {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 10px;
+      margin-left: -30px;
+  }
+}
