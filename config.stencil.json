@@ -2,10 +2,12 @@
   "customLayouts": {
     "brand": {},
     "category": {},
-    "page": {},
+    "page": {
+      "product-themed.html": "/products-themed/"
+    },
     "product": {}
   },
-  "normalStoreUrl": "https://thread-and-cupid-h6.mybigcommerce.com",
+  "normalStoreUrl": "https://thread-and-cupid-h6.mybigcommerce.com/",
   "port": "3000",
   "packageManager": "npm"
 }
