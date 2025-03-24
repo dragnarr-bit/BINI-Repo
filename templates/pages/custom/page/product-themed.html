@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <!-- Optional theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css"
+      integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ"
+      crossorigin="anonymous"
+    />
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Responsive Page</title>
+    <style>
+      @font-face {
+        font-family: 'Batman';
+        src: url("{{cdn 'assets/fonts/BatmanForeverAlternate400.ttf'}}") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        background-color: white; /* Set background color to white */
+      }
+
+      .banner {
+        background-color: #ffe0e8; /* Banner color */
+        padding: 0px;
+        text-align: center;
+      }
+
+      .banner h2 {
+        margin: 0; /* Remove default margin */
+        padding: 10px;
+        font-family: "DM Sans", Arial, Helvetica, sans-serif;
+        color: #5d2b37;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: center;
+        display: block;
+      }
+
+      .logo {
+        max-width: 100%; /* Ensure the logo is responsive */
+        height: auto; /* Maintain aspect ratio */
+        display: block; /* Center the image */
+        margin: 0 auto; /* Center the image */
+        width: 300px; /* Width of the logo */
+        height: 100%;
+        padding: auto;
+      }
+
+      @media (max-width: 1920px) {
+        .back-button,
+        .cart-button {
+          display: none; /* Hide the banner on mobile screens */
+        }
+
+ 
+      } 
+      @media (max-width: 360px) {
+        .banner {
+          display: none; /* Hide the banner on mobile screens */
+        }
+        .logo {
+          width: 91px; /* Adjust the width of the logo on mobile screens */
+          height: 23px;
+
+          display: block; /* Center the image */
+          margin: 0 auto; /* Center the image */
+          /* margin-top: 10px; */
+        }
+
+        .main-view {
+          width: 100%;
+          height: 100%;
+          display: block;
+          margin-top: -45px;
+          padding-top: 80px;
+          position: sticky;
+          top: 0;
+          z-index: 0;
+        }
+
+        .back-button, .cart-button {
+          width: 24px;
+          height: 24px;
+          display: contents;
+        }
+        .header1 {
+          display: flex;
+          justify-content: center;
+          margin-top: 10px;
+          color: #000;
+          margin-bottom: 10px;
+        }
+        .container-product {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        .scrollable-content {
+            height: 5000px; /* Adjust as needed */
+            position: relative;
+            border-top-right-radius: 30px;
+            border-top-left-radius: 30px;
+            margin-top: -50px;
+            z-index: 1;
+            background-color: white;
+        }
+
+        .container-main {
+            overflow: hidden; /* Prevents child scrolling */
+        }
+
+        .batman-product {
+          font-family: 'Batman';
+          color: #000;
+          font-size: 18px;
+          font-weight: 400;
+          max-width: 800px;
+          white-space: normal;
+          word-break: break-word;
+          line-height: 15.54px;
+          margin-left: 30px;
+          margin-top: 24px;
+        }
+
+        .container.text-center {
+          position: sticky;
+          top: 0;
+          z-index: 2;
+          background-color: white;
+        }
+
+        .star-rating {
+        font-size: 14px;
+        color: #c92555;
+        margin: 10px 0;
+        margin-left: 30px;
+
+      }
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner">
+      <h2 class="batman-product">
+        Handcrafted crochet flowers that last forever.
+        <strong>Buy 2, Get 1 Free!</strong> Custom bouquets available!
+        <strong>Order now!</strong>
+      </h2>
+    </div>
+
+    <div class="container text-center" style="position: sticky; top: 0; z-index: 2; background-color: white;">
+      <div class="row header1">
+        <div class="col-xs-3 col-md-4 back-arrow">
+          <a href="javascript:window.history.back();" class="back-button">
+            <img src="{{cdn 'assets/img/back1.svg'}}" alt="Back" />
+          </a>
+        </div>
+        <div class="col-xs-6 col-md-4">
+          <a href="{{urls.home}}">
+            <img src="{{cdn 'assets/img/LogoMark.svg'}}" alt="Logo" class="logo" />
+          </a>
+        </div>
+        <div class="col-xs-3 col-md-4">
+          <a href="{{urls.cart}}" class="cart-button">
+            <img src="{{cdn 'assets/img/cart-1.svg'}}" alt="cart" />
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container container-product main-view">
+      <img src="{{cdn 'assets/img/batmanProduct.svg'}}" alt="batman" class="main-view"/>
+    </div>
+    
+
+  
+  
+    <div class="scrollable-content">
+      <!-- Add your scrollable content here -->
+      <div style="background-color: white;" class="container-main"></div>
+      <div style="font-family: 'Batman';" class="batman-product">Gotham-azing Batman™ <br> Collector’s Box</div>
+      <div class="star-rating"></div>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const ratingElement = document.getElementById("product-rating");
+          const productRating = parseFloat(ratingElement?.getAttribute("data-rating")) || 4.5; // Replace with backend data if available
+          displayStars(productRating);
+        });
+  
+        function displayStars(productRating) {
+          const starContainer = document.querySelector(".star-rating");
+          starContainer.innerHTML = ""; // Clear previous stars
+  
+          for (let i = 1; i <= 5; i++) {
+            const star = document.createElement("i");
+            if (i <= Math.floor(productRating)) {
+              star.className = "fa fa-star"; // Full star
+            } else if (i - 0.5 <= productRating) {
+              star.className = "fa fa-star-half-o"; // Half star
+            } else {
+              star.className = "fa fa-star-o"; // Empty star
+            }
+            starContainer.appendChild(star);
+          }
+        }
+      </script>
+
+    </div>
+  </body>
+</html>
