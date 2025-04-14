@@ -1,0 +1,86 @@
+.crochet-hero {
+    background-color: #F9F6F1;
+    position: relative;
+    padding: 4rem 1rem;
+    text-align: center;
+    overflow: hidden;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+    letter-spacing: -0.02em;
+    margin-top: 4rem;
+
+    &__inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  
+    &__subheading {
+      font-size: 0.9rem;
+      color: #353F4A;
+      font-family: 'DMSansRegular', sans-serif;
+    }
+  
+    &__heading {
+      font-size: 1.75rem;
+      color: #353F4A;
+      line-height: 1.4;
+      letter-spacing: -0.02em;
+      font-family: 'DMSansBold', sans-serif;
+  
+      @media (min-width: 768px) {
+        font-size: 2rem;
+      }
+  
+      @media (min-width: 1024px) {
+        font-size: 2.25rem;
+      }
+    }
+  
+    &__decor {
+      position: absolute;
+      z-index: 0;
+      pointer-events: none;
+  
+      &--left {
+        top: -10%;
+        left: -5%;
+        width: 200px;
+        z-index: -9999;
+        width: 240px !important;
+  
+        @media (min-width: 768px) {
+          width: 120px;
+          left: 2%;
+        }
+      }
+  
+      &--right {
+        top: 15%;
+        right: -5%;
+        width: 240px !important;
+        z-index: -9999;
+  
+        @media (min-width: 768px) {
+          width: 120px;
+          right: 2%;
+        }
+      }
+  
+      &--bottom {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-250%);
+        width: 140px !important;
+
+        @media (min-width: 768px) {
+          width: 140px;
+        }
+      }
+    }
+  }
+  .crochet-hero__decor {
+    filter: brightness(0) saturate(100%) invert(96%) sepia(11%) saturate(231%) hue-rotate(347deg) brightness(95%) contrast(100%);
+  }
+  

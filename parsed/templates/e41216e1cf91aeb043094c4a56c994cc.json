@@ -1,0 +1,3 @@
+{
+  "components/custom-components/top-bar": "<div class=\"top-bar\">\r\n    <p class=\"top-bar__text\">\r\n        Discover our handcrafted crochet accessories. <strong>Enjoy free shipping on selected items!</strong> Unique pieces for every style!\r\n        <a href=\"/accessories\" class=\"top-bar__link\">Order now!</a>\r\n    </p>\r\n  </div>\r\n  "
+}

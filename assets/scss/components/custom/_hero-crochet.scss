@@ -1,0 +1,101 @@
+.hero-crochet-section {
+  padding: 3rem 0;
+  background-color: #fff;
+
+  .hero-crochet-grid {
+    display: grid;
+    grid-template-columns: 3fr 5fr 3fr; 
+    align-items: center;
+    gap: 5%; 
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; 
+      gap: 0;
+
+      .hero-crochet-col.left,
+      .hero-crochet-col.right {
+        width: 80%;  
+        margin: 0 auto;  
+      }
+
+      .hero-crochet-col.left {
+        order: 1; 
+      }
+
+      .hero-crochet-col.center {
+        order: 2;  
+      }
+
+      .hero-crochet-col.right {
+        order: 3; 
+      }
+    }
+  }
+
+  .hero-crochet-col {
+    &.left,
+    &.right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+          max-width: 50%;  
+          height: auto;  
+        }
+      }
+    }
+
+    &.center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .hero-heading {
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: bold;
+        color: #353F4A;
+        margin-bottom: 1rem;
+        font-family: 'DMSansBold', sans-serif;
+        letter-spacing: -0.02em;
+      }
+
+      .hero-subtext {
+        color: $color-textBase;
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        line-height: 1.6;
+        font-family: 'DMSansRegular', sans-serif;
+      }
+
+      .button {
+        margin-bottom: 1.5rem;
+        background-color: #0E4340;
+        font-family: 'DMSansMedium', sans-serif;
+        font-size: clamp(0.9rem, 2vw, 1.125rem); 
+        padding: clamp(0.6rem, 1.5vw, 0.75rem) clamp(1.25rem, 3vw, 2rem); 
+        border-radius: 6px;
+        color: #fff;
+        transition: background-color 0.3s ease;
+      }
+
+      .hero-footer {
+        font-size: 0.875rem;
+        color: #888;
+        font-family: 'DMSansRegular', sans-serif;
+      }
+    }
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+}

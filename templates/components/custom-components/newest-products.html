@@ -1,0 +1,15 @@
+<section class="newest-products custom-section">
+    <div class="container">
+        <h2 class="custom-section-title">Explore our newest products</h2>
+
+        <div class="product-grid">
+            {{#each products}}
+                {{> components/products/card settings=../settings show_compare=../settings.show_product_compare}}
+            {{/each}}
+        </div>
+
+        <div class="view-more-wrapper">
+            <a class="button button--primary" href="/products">See more</a>
+        </div>
+    </div>
+</section>

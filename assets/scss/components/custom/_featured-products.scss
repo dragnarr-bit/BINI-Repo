@@ -1,0 +1,67 @@
+.featured-products {
+    padding: 4rem 1rem;
+    text-align: center;
+  
+    .custom-section-title {
+      font-size: 2rem;
+      font-family: 'DMSansBold', sans-serif;
+      margin-bottom: 4rem;
+      color: #353F4A;
+      letter-spacing: -0.02em;
+    }
+  
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 3rem;
+      justify-items: stretch;
+      align-items: stretch;
+      margin-bottom: 2rem;
+  
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(5, 1fr);
+      }
+  
+      .product-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        background: #fff;
+        padding: 1rem;
+        border: 1px solid #e5e5e5;
+        border-radius: 0.5rem;
+  
+        img {
+          width: 100%;
+          height: auto;
+          object-fit: cover;
+        }
+  
+        .product-info {
+          flex: 1;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          text-align: center;
+          margin-top: 1rem;
+        }
+      }
+    }
+  
+    .view-more-wrapper {
+      margin-top: 2rem;
+  
+      .button {
+        margin-bottom: 1.5rem;
+        background-color: #0E4340;
+        font-family: 'DMSansMedium', sans-serif;
+        font-size: clamp(0.9rem, 2vw, 1.125rem);
+        padding: clamp(0.6rem, 1.5vw, 0.75rem) clamp(1.25rem, 3vw, 2rem);
+        border-radius: 6px;
+        color: #fff;
+        transition: background-color 0.3s ease;
+      }
+    }
+  }
+  

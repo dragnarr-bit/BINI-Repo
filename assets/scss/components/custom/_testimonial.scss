@@ -1,0 +1,111 @@
+.testimonial-section {
+    background-color: #ffffff;
+    padding: 4rem 1rem;
+    margin-top: 4rem;
+  }
+  
+  .testimonial-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-header {
+    text-align: left;
+    margin-bottom: 3rem;
+    font-family: 'DMSansRegular', sans-serif;
+  }
+  
+  .testimonial-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1e2a32;
+    margin-bottom: 0.75rem;
+    font-family: 'DMSansBold', sans-serif;
+    letter-spacing: -0.02em;
+  }
+  
+  .testimonial-subtitle {
+    font-size: 1rem;
+    color: #4a4a4a;
+    max-width: 600px;
+  }
+  
+  .testimonial-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 950px;
+  }
+  
+  .testimonial-image-wrapper {
+    position: relative;
+    flex: 1 1 300px;
+    max-width: 350px;
+    margin-top: 10px;
+  }
+  
+  .testimonial-image {
+    width: 100%;
+    border-radius: 12px;
+    transform: rotate(-5deg);
+    z-index: 2;
+    position: relative;
+  }
+  
+  .testimonial-decoration {
+    position: absolute;
+    bottom: -15px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+  
+  .testimonial-quote {
+    flex: 1 1 400px;
+    max-width: 500px;
+    position: relative;
+  }
+  
+  .quote-mark {
+    font-size: 2rem;
+    color: #1e2a32;
+    display: inline-block;
+    margin-bottom: 1rem;
+  }
+  
+  .testimonial-text {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    font-family: 'DMSansRegular', sans-serif;
+  }
+  
+  .testimonial-author {
+    font-size: 1rem;
+    color: #666;
+    font-family: 'DMSansRegular', sans-serif;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .testimonial-content {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .testimonial-quote {
+      max-width: 100%;
+    }
+  
+    .testimonial-image-wrapper {
+      max-width: 80%;
+    }
+  }
+  

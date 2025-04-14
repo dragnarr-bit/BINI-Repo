@@ -1,0 +1,12 @@
+<section class="featured-products custom-section">
+    <div class="container">
+        <h2 class="custom-section-title">Explore our featured products</h2>
+
+        <div class="product-grid">
+            {{#each products.featured}}
+                {{> components/products/card settings=../settings show_compare=../settings.show_product_compare}}
+            {{/each}}
+        </div>
+
+    </div>
+</section>

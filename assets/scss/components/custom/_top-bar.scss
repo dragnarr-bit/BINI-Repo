@@ -1,0 +1,35 @@
+
+.top-bar {
+    background-color: #f8f5f1;
+    text-align: center;
+    padding: 0.75rem 1rem;
+    font-size: 0.875rem;
+    color: #353F4A;
+    font-family: 'DMSansRegular', sans-serif;
+  
+    &__text {
+      margin: 0;
+      line-height: 1.5;
+    }
+  
+    strong {
+      font-weight: 600;
+    }
+  
+    &__link {
+      font-weight: 600;
+      color: #353F4A;
+      text-decoration: underline;
+      margin-left: 0.25rem;
+  
+      &:hover {
+        color: #353F4A;
+      }
+    }
+  
+    @media screen and (max-width: 768px) {
+      font-size: 0.75rem;
+      padding: 0.5rem;
+    }
+  }
+  

@@ -1,0 +1,3 @@
+{
+  "components/custom-components/crochet-banner": "<div class=\"crochet-hero\">\r\n    <div class=\"crochet-hero__inner\">\r\n      <p class=\"crochet-hero__subheading\">You're in good company</p>\r\n      <h2 class=\"crochet-hero__heading\">\r\n        Loved by crochet enthusiasts, from<br>\r\n        hobbyists to collectors\r\n      </h2>\r\n    </div>\r\n    <img class=\"crochet-hero__decor crochet-hero__decor--left\" src=\"{{cdn 'assets/img/T&C/decor1.svg'}}\" alt=\"\" />\r\n    <img class=\"crochet-hero__decor crochet-hero__decor--right\" src=\"{{cdn 'assets/img/T&C/decor2.svg'}}\" alt=\"\" />\r\n    <img class=\"crochet-hero__decor crochet-hero__decor--bottom\" src=\"{{cdn 'assets/img/T&C/decor3.svg'}}\" alt=\"\" />\r\n  </div>\r\n  "
+}

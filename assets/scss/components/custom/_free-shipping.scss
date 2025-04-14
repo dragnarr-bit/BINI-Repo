@@ -1,0 +1,104 @@
+.free-shipping-section {
+    padding: 4rem 1rem;
+    background-color: #f9f5f0;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .free-shipping-box {
+    background: #fff;
+    border-radius: 10px;
+    padding: 2.5rem 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .free-shipping-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .free-shipping-image-wrapper {
+    position: relative;
+    flex: 1 1 280px;
+    max-width: 280px;
+  }
+  
+  .free-shipping-image {
+    width: 100%;
+    border-radius: 10px;
+    transform: rotate(-5deg);
+    position: relative;
+    z-index: 2;
+  }
+  
+  .free-shipping-content {
+    flex: 1 1 400px;
+    max-width: 500px;
+  }
+  
+  .free-shipping-subtitle {
+    font-size: 0.75rem;
+    color: #666;
+    text-transform: uppercase;
+    font-family: 'DMSansRegular', sans-serif;
+  }
+  
+  .free-shipping-title {
+    font-size: 2.2rem;
+    color: #1e2a32;
+    margin: 0.5rem 0;
+    font-family: 'DMSansBold', sans-serif;
+    letter-spacing: -0.02em;
+    padding: 10px 0;
+  }
+  
+  .free-shipping-desc {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 1.25rem;
+    line-height: 1.5;
+    font-family: 'DMSansRegular', sans-serif;
+
+  }
+  
+  .free-shipping-btn {
+    margin-bottom: 10px;
+    background-color: #0E4340;
+    font-family: 'DMSansMedium', sans-serif;
+    font-size: clamp(0.9rem, 2vw, 1.125rem); 
+    padding: clamp(0.6rem, 1.5vw, 0.75rem) clamp(1.25rem, 3vw, 2rem); 
+    border-radius: 6px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  .free-shipping-note {
+    display: block;
+    font-size: 0.75rem;
+    color: #666;
+    font-family: 'DMSansRegular', sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    .free-shipping-wrapper {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .free-shipping-content {
+      max-width: 100%;
+    }
+  
+    .free-shipping-image-wrapper {
+      max-width: 80%;
+    }
+  }
+  

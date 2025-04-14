@@ -1,0 +1,208 @@
+.footer {
+    background-color: #1B1E24;
+    color: #ffffff;
+    padding: 0 2rem;
+    position: relative;
+    overflow: hidden;
+    font-family: 'DMSansRegular', sans-serif;
+}
+
+.footer .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: flex-start;
+    padding: 2rem 0;
+}
+
+/* Logo size fixed */
+.footer-logo {
+    flex: 1 1 150px;
+    min-width: 150px;
+}
+
+.footer-logo img {
+    height: 100px;
+    width: auto;
+    margin-top: 30px;
+}
+
+.footer-info-col {
+    flex: 1 1 150px;
+    min-width: 150px;
+}
+
+.footer-info-col--small {
+    h3 {
+        font-size: 1rem;
+        color: #FFFFFF;
+        margin-bottom: 0.5rem;
+        font-family: 'DMSansMedium', sans-serif;
+    }
+
+    p {
+        font-size: 1rem;
+        color: #b5b9c4;
+        margin-bottom: 1rem;
+        line-height: 1.5;
+    }
+}
+
+/* Additional styling for all footer section headings */
+.footer-info-heading {
+    font-size: 1rem; /* Set a consistent size for all h3 elements */
+    color: #FFFFFF;  /* White color for headings */
+    font-weight: normal; /* Regular font weight for non-newsletter headings */
+    margin-bottom: 0.5rem;
+}
+
+/* General footer content styling */
+.footer-info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-info-list li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-info-list a {
+    color: #b5b9c4;
+    text-decoration: none;
+    font-size: 0.875rem;
+}
+
+.footer-info-list a:hover {
+    text-decoration: underline;
+}
+
+.footer address,
+.footer strong {
+    font-style: normal;
+    font-size: 0.875rem;
+    color: #b5b9c4;
+}
+
+.subscription-form {
+    margin-top: 1rem;
+}
+
+.subscription-form button[type="submit"] {
+    background-color: #d4f1e2;
+    color: #000;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.subscription-form button:hover {
+    background-color: #c1e7d2;
+}
+
+.footer-copyright {
+    text-align: center;
+    width: 100%;
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-logo {
+        text-align: left;
+        width: 100%;
+    }
+
+    .footer-info-col {
+        width: 100%;
+    }
+}
+form{
+    button {
+      padding: 12px 20px;
+      margin: 10px 0;
+      background-color: #CCE9E0; /* Example color */
+      border: none;
+      color: #3D4853;
+      font-size: 11px;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+  }
+}
+a {
+    color: #CCE9E0; 
+    text-decoration: none;
+    font-family: 'DMSansRegular', sans-serif;
+}
+.footer-decor {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.footer-decor img {
+    max-width: 300px;
+    height: auto;
+    transition: all 0.3s ease;
+}
+
+/* Left and right placement */
+.footer-decor--left {
+    left: 0;
+    transform: translateY(40px);
+}
+
+.footer-decor--right {
+    right: 0;
+    transform: translateY(120px);
+}
+
+/* Ensure main content sits above the decorations */
+.footer .container {
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .footer-decor img {
+        max-width: 200px;
+    }
+
+    .footer-decor--right {
+        transform: translateY(80px);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-decor img {
+        max-width: 150px;
+    }
+
+    .footer-decor--right {
+        transform: translateY(50px);
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-decor img {
+        max-width: 120px;
+    }
+
+    .footer-decor--right {
+        transform: translateY(30px);
+    }
+}
